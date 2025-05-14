@@ -16,6 +16,9 @@ git clone https://github.com/seu-usuario/convert-files.git
 cd convert-files
 ```
 
+2. Instale as dependências usando UV:
+
+```bash
 # Crie um ambiente virtual e instale as dependências
 uv venv --python 3.10
 uv sync
