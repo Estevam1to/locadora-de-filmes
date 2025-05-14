@@ -9,8 +9,8 @@ Este projeto implementa uma API RESTful para gerenciar uma locadora de filmes, p
 ## Equipe
 
 Projeto desenvolvido por:
-- **Luís Estevam**: Endpoints de conversão de arquivos, gerenciamento de clientes e estruturação do repositório
-- **Luís Fernando**: Endpoints e lógica de filmes, sistema de aluguéis e logs
+- **Luís Estevam**: Endpoints de conversão de arquivos, gerenciamento de clientes e estruturação do repositório.
+- **Luís Fernando**: Endpoints e lógica de filmes, sistema de aluguéis e logs.
 
 > **Nota**: O repositório contém commits principalmente de um integrante pois ele foi responsável pela estruturação do código. O desenvolvimento foi realizado em conjunto utilizando compartilhamento de arquivos.
 
