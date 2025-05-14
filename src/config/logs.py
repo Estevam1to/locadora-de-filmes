@@ -2,21 +2,19 @@ import logging
 import os
 from pathlib import Path
 
-
 BASE_DIR = Path(__file__).parent.parent
 LOGS_DIR = BASE_DIR / "logs"
-
 os.makedirs(LOGS_DIR, exist_ok=True)
-
 LOG_FILE_PATH = LOGS_DIR / "api.log"
 
-logging.basicConfig(
-    filename=str(LOG_FILE_PATH),  
-    level=logging.INFO,
-    format="%(asctime)s - %(levelname)s - %(message)s",
-)
+logger = logging.getLogger("api_logger")
+logger.setLevel(logging.INFO)
 
-logger = logging.getLogger("uvicorn")
+if not logger.handlers:
+    file_handler = logging.FileHandler(LOG_FILE_PATH)
+    formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
+    file_handler.setFormatter(formatter)
+    logger.addHandler(file_handler)
 
 
 def registrar_log(mensagem: str, nivel: str = "info"):
