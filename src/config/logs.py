@@ -11,7 +11,7 @@ os.makedirs(LOGS_DIR, exist_ok=True)
 LOG_FILE_PATH = LOGS_DIR / "api.log"
 
 logging.basicConfig(
-    filename=str(LOG_FILE_PATH),  # Converter Path para string
+    filename=str(LOG_FILE_PATH),  
     level=logging.INFO,
     format="%(asctime)s - %(levelname)s - %(message)s",
 )
